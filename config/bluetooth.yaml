@@ -1,0 +1,4 @@
+radiacode_node:
+  ros__parameters:
+    bluetooth_mac: "00:11:22:33:44:55"  # Replace with your device's Bluetooth MAC address
+    frequency: 0.5  # Default frequency of 0.5 Hz (2 seconds)
