@@ -62,11 +62,11 @@ ros2 launch radiacode_driver radiacode_driver.bluetooth.launch.py
 
 ## Message structure
 
-| Topic       | Type                          |
-| ----------- | ----------------------------- |
-| /spectrum   | [Spectrum](/msg/Spectrum.msg) |
-| /dose_rate  | [Float32](float_msg)          |
-| /count_rate | [Float32](float_msg)          |
+| Topic       | Type                                                                         |
+| ----------- | ---------------------------------------------------------------------------- |
+| /spectrum   | [Spectrum](/msg/Spectrum.msg)                                                |
+| /dose_rate  | [Float32](https://docs.ros.org/en/noetic/api/std_msgs/html/msg/Float32.html) |
+| /count_rate | [Float32](https://docs.ros.org/en/noetic/api/std_msgs/html/msg/Float32.html) |
 
 ## Additional Information
 
