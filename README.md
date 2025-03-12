@@ -60,6 +60,14 @@ To explicitly launch the driver in Bluetooth mode:
 ros2 launch radiacode_driver radiacode_driver.bluetooth.launch.py
 ```
 
+## Message structure
+
+| Topic       | Type                          |
+| ----------- | ----------------------------- |
+| /spectrum   | [Spectrum](/msg/Spectrum.msg) |
+| /dose_rate  | [Float32](float_msg)          |
+| /count_rate | [Float32](float_msg)          |
+
 ## Additional Information
 
 - This package is compatible with **ROS 2 Humble**.
