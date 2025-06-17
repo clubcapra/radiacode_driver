@@ -1,4 +1,4 @@
 radiacode_node:
   ros__parameters:
     serial: "RC-10x-xxxxxx"  # Replace with your device's serial number
-    frequency: 0.5  # Default frequency of 0.5 Hz (2 seconds)
+    frequency: 2  # Default frequency of 2 Hz (0.5 seconds per tick)

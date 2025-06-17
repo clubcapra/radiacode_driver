@@ -26,8 +26,8 @@ class RadiacodeNode(Node):
         
         # Validate frequency parameter
         if frequency <= 0:
-            self.get_logger().error('Frequency must be greater than 0. Using default value of 0.5 Hz.')
-            frequency = 0.5
+            self.get_logger().error('Frequency must be greater than 0. Using default value of 2 Hz.')
+            frequency = 2
         
         # Convert frequency to period (in seconds) for the timer
         period = 1.0 / frequency
