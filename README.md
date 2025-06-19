@@ -10,6 +10,7 @@ Before using this package, ensure you have the required dependencies installed:
 
 ```bash
 sudo apt install -y libglib2.0-dev
+pip install radiacode
 ```
 
 Additionally, set up the necessary udev rules for USB access:
