@@ -19,7 +19,16 @@ Additionally, set up the necessary udev rules for USB access:
 sudo cp radiacode.rules /etc/udev/rules.d/99-radiacode.rules
 ```
 
-> **Note:** If you encounter an "access denied" error when running the driver, reboot your system to apply the changes.
+**Udev configuration on the jetson:**
+```bash
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="f123", ENV{DEVTYPE}=="usb_device", MODE="0666", TAG+="uaccess"
+```
+**If you encounter an "access denied" error when running the driver, do the following commands, or reboot your system to apply the changes :**
+```bash
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+```
+
 
 ## Building the Package
 
